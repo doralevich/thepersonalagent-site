@@ -4,14 +4,9 @@ export const SITE_URL = "https://thepersonalagent.ai";
 export const SITE_NAME = "The Personal Agent";
 
 /** Self-serve. The questionnaire and the checkout both run on ApolloClaw, so every
- *  "Build Your Agent" CTA points there.
- *
- *  NOTE: this one does NOT go to /build/personal, because that funnel does not exist. Every
- *  other agent site has an entry in BUILD_SLUGS in apolloclaw2 and a matching agent type; there
- *  is no `personal` type, so /build/personal would 404. /onboard is the generic questionnaire,
- *  and it is what apolloclaw.ai's own "create an agent" page links to. If a personal build
- *  funnel is added later, point this at /build/personal and nothing else here changes. */
-export const BUILD_LINK = "https://www.apolloclaw.ai/onboard";
+ *  "Build Your Agent" CTA points there. The slug is `personal` - BUILD_SLUGS in apolloclaw2
+ *  maps it to the `personal` agent type. */
+export const BUILD_LINK = "https://www.apolloclaw.ai/build/personal";
 
 /** Consultation. cal.com is canonical - the old calendly link is stale. */
 export const DEMO_LINK = "https://cal.com/therealdaveo/apollo-claw";
