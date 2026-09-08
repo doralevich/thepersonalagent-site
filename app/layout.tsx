@@ -14,7 +14,12 @@ export const metadata: Metadata = {
     "The Personal Agent triages your inbox and drafts replies, runs your calendar, briefs you before meetings and keeps open loops visible. It reads only what you give it and sends only what you approve.",
   alternates: { canonical: SITE_URL },
   robots: { index: true, follow: true },
-  openGraph: { siteName: SITE_NAME, type: "website", locale: "en_US" },
+  openGraph: {
+    siteName: SITE_NAME,
+    type: "website",
+    locale: "en_US",
+    images: [{ url: `${SITE_URL}/images/og-image.jpg`, width: 1200, height: 630 }],
+  },
   other: {
     "geo.region": "US-NY",
     "geo.placename": "Roslyn Heights, NY",
