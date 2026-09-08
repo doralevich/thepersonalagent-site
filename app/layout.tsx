@@ -76,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-sans">
         {children}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-6ZNR1CT43Q" strategy="afterInteractive" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-2YZ6FJGSF6" strategy="afterInteractive" />
         {/* Google Consent Mode v2, matching the pattern established on theceoagent.ai and
             apolloclaw.ai. analytics_storage starts DENIED, so GA writes no cookie and no
             identifier until the visitor accepts and CookieConsent calls
@@ -101,7 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }
           } catch (e) {}
           gtag('js', new Date());
-          gtag('config', 'G-6ZNR1CT43Q');
+          gtag('config', 'G-2YZ6FJGSF6');
         `}</Script>
         <CookieConsent />
       </body>
