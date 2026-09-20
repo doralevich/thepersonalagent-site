@@ -18,14 +18,29 @@
 // quarterly review - so the audiences now include people whose hardest day is not at work.
 //
 // They are split the same way, by whose day it is. A parent is protecting a household's
-// logistics, a caregiver is running someone else's affairs on top of their own, and a
-// two-career household is protecting the seam between two calendars where things fall through.
+// logistics, a caregiver is running someone else's affairs on top of their own, and the person
+// running a house alongside a job is carrying a list that belongs to two people.
 // None of them is a softer version of the executive page; each is a different shape of load.
 //
-// WHAT THEY MAY NOT PROMISE. The agent connects an inbox, a calendar and a document store. It
-// does not phone the plumber, hold your bank login or walk the dog, and personal-life copy is
-// exactly where a product like this starts implying that it does. Every benefit below names
-// something that happens in mail, a calendar or a document, because that is what is true.
+// WHAT THEY MAY NOT PROMISE. Two limits, and the second one was learned the hard way.
+//
+// The agent connects an inbox, a calendar and a document store. It does not phone the plumber,
+// hold your bank login or walk the dog, and personal-life copy is exactly where a product like
+// this starts implying that it does. Every benefit below names something that happens in mail, a
+// calendar or a document, because that is what is true.
+//
+// AND IT IS ONE PERSON'S MAIL AND ONE PERSON'S CALENDAR. On the dashboard an app is connected or
+// it is not - isToolkitConnected in the platform's IntegrationsView returns a boolean per toolkit,
+// and there is no second-account path on a card that already reads connected. So an agent reads
+// the mailbox its owner connected and no other, and the chat channels are the same shape: the
+// first person to message one becomes its owner and everyone else is dropped.
+//
+// The for-households page originally promised the opposite - "out of two personal inboxes and
+// into one sorted list", clashes spotted across both partners' calendars - three entries after
+// this warning was written. It is the most natural thing in the world to write about a household
+// as though the software can see all of it, which is exactly why the limit is spelled out here
+// rather than left as a thing everybody knows. Copy about two people may describe their PROBLEM
+// in two people's terms; every claim about what the agent DOES belongs to one of them.
 //
 // Every page holds the same two lines, because this agent sees more than any of its siblings:
 // what it may read is a decision made at setup rather than a default discovered later, and
@@ -378,19 +393,19 @@ export const AUDIENCE_PAGES: Audience[] = [
   },
   {
     slug: "for-households",
-    label: "For Two-Career Households",
-    eyebrow: "For Two-Career Households",
-    title: "Two Calendars. One Household. Everything Falls Through the Gap.",
+    label: "For Busy Households",
+    eyebrow: "For Busy Households",
+    title: "Two Jobs, One House, and One Person Tracking All of It.",
     intro:
-      "Nothing is forgotten because somebody is careless. It is forgotten because it belonged to both of you and lived in neither calendar. The Personal Agent holds the seam.",
-    metaTitle: "AI Personal Assistant for Busy Households | Two Careers, One Calendar",
+      "Nothing is forgotten because somebody is careless. It is forgotten because it belonged to both of you and ended up carried by one. The Personal Agent takes that side of it - your inbox, your calendar, your half of the seam.",
+    metaTitle: "AI Personal Assistant for Busy Households | Home Admin, Email and Calendar",
     metaDescription:
-      "A private AI agent for households where both people work. Keeps two calendars in step, sorts the family email, drafts the replies and surfaces what is coming before it clashes. It reads only what you give it and sends only what you approve.",
+      "A private AI agent for the person running a household alongside a job. Sorts the home admin out of your inbox, keeps your calendar straight, drafts the replies and plans what is coming before it turns urgent. It reads only what you give it and sends only what you approve.",
     keywords: [
       "AI assistant for busy households",
-      "dual career household organisation",
-      "shared family calendar AI",
       "household admin assistant",
+      "home admin AI",
+      "personal admin assistant AI",
       "work life logistics AI",
     ],
     problem: {
@@ -403,32 +418,32 @@ export const AUDIENCE_PAGES: Audience[] = [
     benefits: [
       {
         title: "Clashes Found Early",
-        body: "The evening you are both away, the week the travel overlaps. Flagged while it is still cheap to fix rather than on the day.",
+        body: "The week the travel lands on top of the thing at home, against everything already in your calendar. Flagged while it is still cheap to move rather than on the day.",
       },
       {
         title: "The Household Email, Sorted",
-        body: "School, trades, insurers, the bookings. Out of two personal inboxes and into one sorted list with the replies drafted.",
+        body: "School, trades, insurers, the bookings. Separated from the work mail and from each other in the inbox they already arrive in, with the replies drafted.",
       },
       {
         title: "What Was Agreed, Written Down",
-        body: "The thing decided in passing lives somewhere other than in whoever happens to remember it, and comes back before it is due.",
+        body: "The thing decided in passing stops living in your memory alone, and comes back before it is due rather than after.",
       },
       {
         title: "Booking Without the Thread",
-        body: "The back-and-forth to find a date that works for both of you, and for the other family, handled to the point of a time to confirm.",
+        body: "The thread with the other family, the trades, the restaurant, run down to a shortlist of times. You pick the one that works at your end, which is the part only you know anyway.",
       },
       {
         title: "Planned Before It Is Urgent",
         body: "The trip, the works on the house, the thing that needs booking in March. Researched and summarized while there are still options.",
       },
       {
-        title: "Drawn Where You Want the Line",
-        body: "One agent, or one each, and the two calendars shared as far as you choose and no further. That is a setup question rather than an assumption.",
+        title: "Yours, and Only Yours",
+        body: "It reads the mailbox and calendar you connect and nobody else's - your partner's stay entirely their own. If you both want one, you get one each, and neither can see into the other.",
       },
     ],
     closing: {
       heading: "Stop Running the House in the Evenings",
-      body: "The coordination is real work, it is just work neither of you was hired for. It is also the most automatable thing in the week.",
+      body: "The coordination is real work, it is just work nobody was hired for. It is also the most automatable thing in the week.",
     },
   },
 ];
