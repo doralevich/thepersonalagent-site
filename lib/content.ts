@@ -33,6 +33,11 @@
 // not phone anybody, hold a bank login or do anything with a card. Personal-life copy is exactly
 // where a product like this starts implying otherwise, so every line below names something that
 // happens in an inbox, a calendar or a document.
+//
+// And it is ONE person's inbox and calendar - see the longer note in lib/audiences.ts. The
+// "Two Careers" testimonial below is the one place that nearly said otherwise: a household's
+// logistics are genuinely shared, but the agent reading them is not. It describes one person's
+// calendar holding what used to be in neither.
 
 export const CAPABILITIES = [
   {
@@ -121,7 +126,7 @@ export const TESTIMONIALS = [
   {
     industry: "Two Careers",
     quote:
-      "Nothing was ever forgotten because either of us was careless. It was forgotten because it belonged to both of us and was in neither calendar. Having one thing watch the seam has stopped most of our arguments about logistics.",
+      "Nothing was ever forgotten because either of us was careless. It was forgotten because it belonged to both of us and was in neither calendar. It is in mine now, and it comes back at me before it is due, which has stopped most of our arguments about logistics.",
     name: "Both partners work",
     detail: "Two children, frequent travel",
   },
