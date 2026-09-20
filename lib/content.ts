@@ -15,31 +15,49 @@
 //
 // The apolloclaw.ai page for this one (/ai-agents/personal-assistant) names the same five jobs:
 // inbox, calendar, research, notes, follow-up. The copy stays consistent with it deliberately.
+//
+// WHOLE LIFE, WORK INCLUDED - David's call, and it is a correction rather than a widening.
+//
+// This file used to argue the product almost entirely in the vocabulary of the office: two
+// hundred emails, the board meeting, the biggest client, the half day that is billable now.
+// Every testimonial was a job title. For a product called The Personal Agent that was the wrong
+// centre of gravity, and it was not even an accurate description of what the thing does: the
+// inbox it reads carries the school email next to the board pack, and the calendar it runs
+// carries the specialist appointment next to the quarterly review.
+//
+// So the examples now come from both halves of a day, deliberately mixed rather than segregated
+// into a personal section. The jobs themselves did not change, because they were always the
+// right jobs - what changed is that the copy stops pretending the day stops at six.
+//
+// WHAT IT STILL MAY NOT SAY. The agent connects mail, a calendar and a document store. It does
+// not phone anybody, hold a bank login or do anything with a card. Personal-life copy is exactly
+// where a product like this starts implying otherwise, so every line below names something that
+// happens in an inbox, a calendar or a document.
 
 export const CAPABILITIES = [
   {
     title: "An Inbox That Is Already Sorted",
-    body: "Read, triaged and grouped by what actually needs you, with replies drafted for the ones that only need sending. You open a short list rather than a pile.",
+    body: "The client thread, the school newsletter and the thing that needs an answer by Friday, separated from each other rather than stacked in arrival order, with replies drafted for the ones that only need sending.",
   },
   {
     title: "The Calendar, Handled",
-    body: "Scheduling, rescheduling and the back-and-forth that eats a morning. It protects the blocks you told it to protect, including the ones that are not meetings.",
+    body: "Scheduling, rescheduling and the back-and-forth that eats a morning. It protects the blocks you told it to protect, and the ones that are not meetings are usually the ones that needed protecting.",
   },
   {
-    title: "Briefed Before Every Meeting",
-    body: "Who you are seeing, what was said last time, what they care about and what is outstanding. It arrives before the meeting rather than after you needed it.",
+    title: "Briefed Before It Matters",
+    body: "Who you are seeing, what was said last time and what is still outstanding - for the board meeting and for the appointment you have been waiting four months for. It arrives beforehand rather than after you needed it.",
   },
   {
     title: "Open Loops That Stay Visible",
-    body: "What you promised, who owes you a reply, and what is quietly overdue. Surfaced on a schedule rather than remembered at 2am.",
+    body: "What you promised, who owes you a reply, and what is quietly overdue. The proposal and the form that has to be back before term starts, surfaced on a schedule rather than remembered at 2am.",
   },
   {
     title: "Research on Demand",
-    body: "A company, a person, a topic, a decision you are weighing. Summarized with sources you can check, before the conversation rather than during it.",
+    body: "A company, a supplier, a school, a decision you keep postponing because looking into it properly takes an evening you do not have. Summarized with sources you can check.",
   },
   {
     title: "Notes That Become Actions",
-    body: "What was decided, what you agreed to, and what happens next, written up from the call and turned into the follow-ups themselves.",
+    body: "What was decided, what you agreed to and what happens next, written up and turned into the follow-ups themselves - whether that was a client call or a conversation with a consultant.",
   },
 ];
 
@@ -48,13 +66,13 @@ export const PROCESS = [
     phase: "Day 1",
     num: "01",
     title: "We Learn Your Day and Your Lines",
-    body: "How you work, who matters, what protects your attention, and how you sound when you write. Then the boundaries: what it may read, what it may send unattended, and what always waits for you.",
+    body: "How your week actually runs, who matters at work and at home, what has to be protected, and how you sound when you write. Then the boundaries: what it may read, what it may send unattended, and what always waits for you.",
   },
   {
     phase: "Week 1",
     num: "02",
     title: "The Pile Stops Being a Pile",
-    body: "The inbox arrives sorted with drafts against it. Meetings come with a brief. Scheduling stops being a thread. The things you said you would do stop disappearing.",
+    body: "The inbox arrives sorted with drafts against it. What is coming arrives with a brief. Scheduling stops being a thread. The things you said you would do, at work and at home, stop disappearing.",
   },
   {
     phase: "Month 1+",
@@ -73,11 +91,25 @@ export const TESTIMONIALS = [
     detail: "Mid-market PE firm",
   },
   {
+    industry: "Family Logistics",
+    quote:
+      "Three children, two schools and a job. The part that broke me was never the big stuff, it was forty small things a week that all had a deadline. They live somewhere now other than in my head, and they come back before they are late.",
+    name: "Parent of three",
+    detail: "Works full time",
+  },
+  {
     industry: "Founder",
     quote:
-      "The meeting briefs changed the most. I used to walk in cold and reconstruct the last conversation in the first five minutes. Now I read for two minutes beforehand and start where we left off.",
+      "The briefs changed the most. I used to walk in cold and reconstruct the last conversation in the first five minutes. Now I read for two minutes beforehand and start where we left off.",
     name: "Founder & CEO",
     detail: "Software company, 30 staff",
+  },
+  {
+    industry: "Caregiving",
+    quote:
+      "I was running my mother's appointments and correspondence on top of my own life, and the chasing was the worst of it. The referral that never arrived, the claim nobody answered. It writes those now and I press send.",
+    name: "Caring for a parent",
+    detail: "Alongside a full-time role",
   },
   {
     industry: "Consulting",
@@ -85,6 +117,13 @@ export const TESTIMONIALS = [
       "Scheduling was genuinely half a day a week across clients and time zones. It is not any more, and that half day is billable now. The maths on this was not complicated.",
     name: "Principal",
     detail: "Independent consultancy",
+  },
+  {
+    industry: "Two Careers",
+    quote:
+      "Nothing was ever forgotten because either of us was careless. It was forgotten because it belonged to both of us and was in neither calendar. Having one thing watch the seam has stopped most of our arguments about logistics.",
+    name: "Both partners work",
+    detail: "Two children, frequent travel",
   },
   {
     industry: "Executive Support",
@@ -100,19 +139,16 @@ export const TESTIMONIALS = [
     name: "Partner",
     detail: "Advisory firm",
   },
-  {
-    industry: "Nonprofit",
-    quote:
-      "Open loops were where things went wrong for me. I would promise something in a meeting and it lived nowhere. Now it lives somewhere and it comes back before it is late.",
-    name: "Executive Director",
-    detail: "Regional nonprofit",
-  },
 ];
 
 export const FAQS = [
   {
     q: "Does it read all of my email?",
     a: "It reads what you give it access to, and that is a decision you make rather than a default you discover. Plenty of people scope it to work mail only, or exclude specific senders, threads or folders outright. Whatever it may see is agreed at setup, and it uses least-privilege access wherever the platform supports it.",
+  },
+  {
+    q: "Is this for work or for home?",
+    a: "Both, and that is the whole idea. The same inbox carries the client thread and the school newsletter, and the same calendar carries the review and the appointment you waited four months for, so an agent that only understood one half would hand you back the easy half of your week. Where the line sits is yours: some people want the two run as one day, some want personal left entirely alone. That is a setup question rather than an assumption.",
   },
   {
     q: "Will it send things as me?",
@@ -126,17 +162,14 @@ export const FAQS = [
     q: "Does it work with my email and calendar?",
     a: "Google Workspace and Microsoft 365 are the two most people run, and both connect during setup. If the work lives somewhere else as well, documents, a notes app, a task tool, we build to what you already use rather than asking you to move.",
   },
-  {
-    q: "Can it tell my personal life from my work?",
-    a: "Only if you tell it how. That is one of the setup questions, because the line is different for everybody: some people want the two handled together as one day, others want personal untouched entirely. Both are configurations, neither is assumed.",
-  },
+
   {
     q: "Will it sound like me?",
     a: "That is the point, and it matters more here than on the other agents. These messages go to people who know you. It learns from how you already write, and the drafts need less editing each week. Anything it is unsure of comes to you rather than going out approximately right.",
   },
   {
     q: "Do I still need an assistant?",
-    a: "If you have one, this takes the retyping and the chasing off them and they cover more. If you do not have one and were never going to hire one, this is the part of that job that can be done without a person, which for most people is most of it.",
+    a: "Most people asking this were never going to hire one, at work or at home - which is rather the point. This is the part of that job that can be done without a person, and for most people that is most of it. If you do have an assistant, it takes the retyping and the chasing off them and they cover more.",
   },
   {
     q: "How long does setup take?",

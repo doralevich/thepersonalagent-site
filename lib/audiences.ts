@@ -1,4 +1,4 @@
-// The four audience pages. Same shape, different argument.
+// The audience pages. Same shape, different argument.
 //
 // Split by WHOSE DAY IT IS. Industry barely matters here - an executive and a consultant have
 // the same inbox in different words - but what is being protected does. An executive is
@@ -7,6 +7,25 @@
 // That last one is the genuinely different shape in the set, and it is also the page most
 // likely to be read defensively, so it argues that the agent takes the retyping rather than
 // the job.
+//
+// THE SECOND HALF OF THE LIST IS NOT A JOB TITLE, and that is the point of it.
+//
+// The first four were all bought with a work budget for a work problem, which left this site
+// arguing for a product called The Personal Agent almost entirely in the vocabulary of the
+// office: billable hours, board meetings, clients, proposals. The name promises something wider
+// than that and the product delivers something wider than that - the same inbox carries the
+// school email and the board pack, the same calendar carries the specialist appointment and the
+// quarterly review - so the audiences now include people whose hardest day is not at work.
+//
+// They are split the same way, by whose day it is. A parent is protecting a household's
+// logistics, a caregiver is running someone else's affairs on top of their own, and a
+// two-career household is protecting the seam between two calendars where things fall through.
+// None of them is a softer version of the executive page; each is a different shape of load.
+//
+// WHAT THEY MAY NOT PROMISE. The agent connects an inbox, a calendar and a document store. It
+// does not phone the plumber, hold your bank login or walk the dog, and personal-life copy is
+// exactly where a product like this starts implying that it does. Every benefit below names
+// something that happens in mail, a calendar or a document, because that is what is true.
 //
 // Every page holds the same two lines, because this agent sees more than any of its siblings:
 // what it may read is a decision made at setup rather than a default discovered later, and
@@ -245,6 +264,171 @@ export const AUDIENCE_PAGES: Audience[] = [
     closing: {
       heading: "Keep the Judgment. Hand Over the Typing.",
       body: "Nothing about discretion, relationships or knowing what actually matters is automatable. Almost everything around them is.",
+    },
+  },
+  {
+    slug: "for-parents",
+    label: "For Parents",
+    eyebrow: "For Parents",
+    title: "The Household Runs on Somebody's Attention. Usually Yours.",
+    intro:
+      "Not one big job. Four hundred small ones, arriving as email, living in a calendar, and remembered by exactly one person. The Personal Agent takes the remembering.",
+    metaTitle: "AI Personal Assistant for Parents | Family Admin, Calendar and Email",
+    metaDescription:
+      "A private AI agent for parents. Sorts the school and club email, keeps the family calendar straight, drafts the replies and surfaces what is coming before it is late. It reads only what you give it and sends only what you approve.",
+    keywords: [
+      "AI assistant for parents",
+      "family admin AI",
+      "family calendar assistant",
+      "AI assistant for busy families",
+      "household admin help",
+    ],
+    problem: {
+      heading: "It Is Not Hard. There Is Just Never Any Gap Between the Next Two Things.",
+      body: [
+        "The forms, the deadlines, the kit that has to be somewhere on Thursday, the party you have to reply to, the appointment that has to move because of the other appointment. Each one takes four minutes and none of them can be skipped, and the whole of it is carried in one person's head alongside a job.",
+        "The cost is not the four minutes. It is that the list never fully unloads, so there is no hour of the week that is actually free of it - and the thing that eventually gets dropped is never the urgent one, it is the one that mattered and had no deadline attached.",
+      ],
+    },
+    benefits: [
+      {
+        title: "The School Email Stops Being a Pile",
+        body: "Newsletters, permission slips, reminders and the three that actually need an answer, sorted apart from each other, with the answers drafted.",
+      },
+      {
+        title: "One Calendar That Holds the Whole Family",
+        body: "Terms, clubs, appointments and the trip you booked in March, in one place, with the clashes flagged while there is still time to move something.",
+      },
+      {
+        title: "Told Before It Is Late",
+        body: "What is due this week and what needs doing before it can happen. Surfaced on a schedule, not remembered in the car on the way there.",
+      },
+      {
+        title: "The Replies You Keep Meaning to Send",
+        body: "The invitation, the teacher, the club that needs a yes by Friday. Drafted and waiting, so answering is a glance rather than an evening.",
+      },
+      {
+        title: "The Research You Never Get To",
+        body: "Camps, clubs, a tutor, the thing you keep meaning to look into. Summarized with sources, so a decision takes ten minutes rather than another month.",
+      },
+      {
+        title: "Work and Home in the Same Day",
+        body: "Because they are. One agent across both, with the line between them drawn where you want it rather than where a tool assumed it.",
+      },
+    ],
+    closing: {
+      heading: "Be the Parent, Not the Project Manager",
+      body: "None of this is the part that matters. It is the part that stands between you and the part that matters, and it is the part a machine can actually take.",
+    },
+  },
+  {
+    slug: "for-caregivers",
+    label: "For Caregivers",
+    eyebrow: "For Caregivers",
+    title: "You Are Running Two Lives and Only One of Them Is Yours.",
+    intro:
+      "Appointments, paperwork, insurers and the family who need to be kept informed - on top of a job and a household. The Personal Agent carries the coordination so you can do the part that needs you in the room.",
+    metaTitle: "AI Personal Assistant for Caregivers | Appointments, Admin and Coordination",
+    metaDescription:
+      "A private AI agent for people caring for a parent or family member. Keeps appointments and correspondence straight, drafts the chasing emails, tracks what is outstanding and keeps the family updated. It reads only what you give it and sends only what you approve.",
+    keywords: [
+      "AI assistant for caregivers",
+      "caregiver admin help",
+      "elderly parent care coordination",
+      "medical appointment organiser AI",
+      "family caregiver support tools",
+    ],
+    problem: {
+      heading: "The Admin Is Relentless and It Arrives While You Are Already Somewhere Else",
+      body: [
+        "Referrals, prescriptions, insurers, benefits, the surgery that only answers between nine and eleven, the letter that needed a reply two weeks ago. It is a second full inbox and a second calendar, and it appeared without anybody making room for it.",
+        "Worse, nothing about it is optional and none of it forgives being late. So it is carried on top of the job and the family, held together by one person's memory, in the weeks when that person has the least left to give it.",
+      ],
+    },
+    benefits: [
+      {
+        title: "Every Appointment in One Place",
+        body: "Consultants, tests, follow-ups and the ones that had to move. Held as a single sequence rather than across letters, texts and memory.",
+      },
+      {
+        title: "The Chasing, Drafted",
+        body: "The referral that has not arrived, the callback that never came, the claim still unanswered. Written and ready, so chasing costs a minute.",
+      },
+      {
+        title: "Nothing Outstanding Gets Lost",
+        body: "What you are waiting on and who owes it, surfaced before it becomes the reason something was delayed by a month.",
+      },
+      {
+        title: "The Family Kept Informed",
+        body: "The update to siblings that you never have the energy to write twice. Drafted from what actually happened, so everybody hears the same thing.",
+      },
+      {
+        title: "Read the Letter, Get the Summary",
+        body: "What a piece of correspondence says, what it wants, and by when. In plain language, with the original there to check.",
+      },
+      {
+        title: "Nothing Personal Goes Out Unread",
+        body: "Anything medical, anything financial, anything to family waits for you. That line is written at setup and it holds.",
+      },
+    ],
+    closing: {
+      heading: "Spend Your Attention Where Being There Matters",
+      body: "There is no version of this where the caring gets automated. There is a version where the coordination around it stops taking the hours you would rather have spent doing it.",
+    },
+  },
+  {
+    slug: "for-households",
+    label: "For Two-Career Households",
+    eyebrow: "For Two-Career Households",
+    title: "Two Calendars. One Household. Everything Falls Through the Gap.",
+    intro:
+      "Nothing is forgotten because somebody is careless. It is forgotten because it belonged to both of you and lived in neither calendar. The Personal Agent holds the seam.",
+    metaTitle: "AI Personal Assistant for Busy Households | Two Careers, One Calendar",
+    metaDescription:
+      "A private AI agent for households where both people work. Keeps two calendars in step, sorts the family email, drafts the replies and surfaces what is coming before it clashes. It reads only what you give it and sends only what you approve.",
+    keywords: [
+      "AI assistant for busy households",
+      "dual career household organisation",
+      "shared family calendar AI",
+      "household admin assistant",
+      "work life logistics AI",
+    ],
+    problem: {
+      heading: "The Handover Is the Hard Part and Nobody Owns It",
+      body: [
+        "Two jobs, two sets of travel, a household that assumes somebody is tracking it. The failures are never in the big things - they are the Tuesday that needed one of you home, agreed in a corridor, written down by neither, and discovered at four o'clock.",
+        "So the coordination becomes its own evening job: comparing calendars, re-agreeing what was already agreed, and keeping a running list that exists only in two heads that are each certain the other one had it.",
+      ],
+    },
+    benefits: [
+      {
+        title: "Clashes Found Early",
+        body: "The evening you are both away, the week the travel overlaps. Flagged while it is still cheap to fix rather than on the day.",
+      },
+      {
+        title: "The Household Email, Sorted",
+        body: "School, trades, insurers, the bookings. Out of two personal inboxes and into one sorted list with the replies drafted.",
+      },
+      {
+        title: "What Was Agreed, Written Down",
+        body: "The thing decided in passing lives somewhere other than in whoever happens to remember it, and comes back before it is due.",
+      },
+      {
+        title: "Booking Without the Thread",
+        body: "The back-and-forth to find a date that works for both of you, and for the other family, handled to the point of a time to confirm.",
+      },
+      {
+        title: "Planned Before It Is Urgent",
+        body: "The trip, the works on the house, the thing that needs booking in March. Researched and summarized while there are still options.",
+      },
+      {
+        title: "Drawn Where You Want the Line",
+        body: "One agent, or one each, and the two calendars shared as far as you choose and no further. That is a setup question rather than an assumption.",
+      },
+    ],
+    closing: {
+      heading: "Stop Running the House in the Evenings",
+      body: "The coordination is real work, it is just work neither of you was hired for. It is also the most automatable thing in the week.",
     },
   },
 ];

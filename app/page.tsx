@@ -32,7 +32,7 @@ export default function Home() {
           badge="Apollo[Claw] Personal Edition"
           title="A real assistant. Not another productivity app."
           punch="The Personal Agent. More Than AI. Your Personal Operating System."
-          sub="The Personal Agent triages your inbox and drafts the replies, runs the calendar, briefs you before every meeting and keeps track of what you promised. It learns how you sound, what protects your attention, and what must never go out without you."
+          sub="The Personal Agent triages your inbox and drafts the replies, runs the calendar, briefs you before it matters and keeps track of what you promised - at work and at home, because they arrive in the same inbox. It learns how you sound, what has to be protected, and what must never go out without you."
           mascot="/images/the-personal-agent-mascot-transparent.png"
           mascotAlt="The Personal Agent mascot"
         />
