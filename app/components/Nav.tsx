@@ -16,7 +16,16 @@ export default function Nav() {
     <header className="site-nav">
       <div className="nav-topbar">
         <div className="nav-topbar-inner">
-          <a href={`${PARENT_SITE}/dashboard`} className="nav-topbar-link">
+          {/* New tab, per David. This leaves the site: the dashboard is on ApolloClaw, not here,
+              and somebody checking their agent should not lose the page they were reading to do
+              it. The footer's ApolloClaw link and the demo link in the drawer already opened this
+              way; this one was the only offsite link in the header that did not. */}
+          <a
+            href={`${PARENT_SITE}/dashboard`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-topbar-link"
+          >
             My Dashboard
           </a>
         </div>
