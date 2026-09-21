@@ -39,7 +39,12 @@ export default function Home() {
             apps is exactly who this is for, and it says so. */}
         <Hero
           badge="Apollo[Claw] Personal Edition"
-          title="A real assistant. Not another productivity app."
+          // WAS "A real assistant. Not another productivity app." That line positioned against a
+          // software category - it told you what this is not, in the vocabulary of app stores,
+          // and a visitor who has never heard of an AI agent left the headline still not knowing
+          // what one is. David's call: say plainly what it is. "Private" is the load-bearing
+          // word and it is true - every agent is its own instance, not a seat on a shared one.
+          title="A private agent that runs your day. Work and home."
           punch="You keep the decisions. Everything wrapped around them stops being yours."
           sub="You open an inbox that is already sorted, with the replies drafted. Your calendar defends the blocks you told it to defend, school pickup included. What you promised comes back to you before it is late - at work and at home, because they arrive in the same inbox. It learns how you sound, what has to be protected, and what must never go out without you."
           mascot="/images/the-personal-agent-mascot-transparent.png"
@@ -117,7 +122,17 @@ export default function Home() {
             <div className="text-center mb-12">
               <Label on="dark">The Process</Label>
               <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-                From Consultation to Running in 2 Weeks
+                {/* "From Consultation to Running in 2 Weeks" was not true and had not been for
+                    a while. The agent is built online from the questionnaire and is running
+                    about fifteen minutes later - which this very page already said two sections
+                    down, in the closing CTA: "Build your agent yourself in about fifteen
+                    minutes". The site was quoting two different setup times to the same reader.
+
+                    Both halves of the new line are real, and they are different things: fifteen
+                    minutes is when it starts working, and the weeks after are when it stops
+                    needing editing. The three steps below already told that story - only the
+                    heading was still selling a two-week onboarding. */}
+                Running in Fifteen Minutes. Better Every Week.
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8">

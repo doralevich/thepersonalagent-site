@@ -8,9 +8,9 @@ import { CAPABILITIES, PROCESS } from "@/lib/content";
 import { breadcrumb, pageMeta } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
-  title: "How It Works: From Consultation to Running in Two Weeks",
+  title: "How It Works: Running in Fifteen Minutes, Better Every Week",
   description:
-    "What The Personal Agent does, how it gets configured around your day, your voice and your boundaries, and what the first two weeks actually look like.",
+    "What The Personal Agent does, how it gets configured around your day, your voice and your boundaries from the questionnaire, and what the first month actually looks like.",
   path: "/how-it-works",
   keywords: [
     "how an AI assistant works",
@@ -86,7 +86,9 @@ export default function Page() {
             <div className="text-center mb-12">
               <Label on="dark">The Timeline</Label>
               <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-                From Consultation to Running in 2 Weeks
+                {/* Same correction as the home page: the agent is built from the questionnaire
+                    and running about fifteen minutes later, not after a two-week onboarding. */}
+                Running in Fifteen Minutes. Better Every Week.
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
