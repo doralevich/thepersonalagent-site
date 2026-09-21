@@ -62,8 +62,12 @@ export default function Page() {
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12">
               <Label>What It Does</Label>
+              {/* "Off You", not "off your team". The grid under this renders CAPABILITIES,
+                  which now names the school newsletter and the appointment you waited four
+                  months for - and a parent, a caregiver or someone running a house has no
+                  team for it to be taken off. */}
               <h2 className="text-3xl md:text-4xl font-bold text-ink leading-tight">
-                Six Jobs It Takes Off Your Team
+                Six Jobs It Takes Off You
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-6">

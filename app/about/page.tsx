@@ -57,8 +57,9 @@ export default function Page() {
                 technology develop before it hit the headlines.
               </p>
               <p>
-                What he saw was a gap. People were spending their best hours on the overhead of being
-                reachable while AI sat untapped. The technology existed to take the
+                What he saw was a gap. People were spending their best hours keeping
+                everything moving rather than doing any of it, at work and at home alike,
+                while AI sat untapped. The technology existed to take the
                 triage, the scheduling and the chasing. Nobody had built it as something
                 you could trust with an inbox, and the tools that claimed to were
                 generic.
@@ -100,7 +101,7 @@ export default function Page() {
               </p>
               <p>
                 That is deliberate. A generic assistant that knows a little about everybody is useful to
-                nobody in particular. An agent that knows which meeting genuinely cannot
+                nobody in particular. An agent that knows which appointment genuinely cannot
                 move, which person gets the careful reply, and what you never want sent
                 without reading, is useful to you.
               </p>
