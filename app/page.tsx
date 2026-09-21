@@ -128,8 +128,16 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-ink leading-tight">
                 Configured Around Whose Day It Is
               </h2>
+              {/* NAMES BOTH HALVES, because the grid under it does. The cards come from
+                  AUDIENCE_PAGES and grew from four to seven; this sentence was written when
+                  there were four and stayed as it was, so the page introduced parents,
+                  caregivers and households with a line about executives, founders, consultants
+                  and assistants. Anything hand-written here that enumerates the list below is
+                  a second copy of it - keep it to examples, and mix them. */}
               <p className="text-lg text-ink mt-4 max-w-3xl mx-auto">
-                An executive is protecting attention, a founder the hours only they can spend, a consultant billable time, and an assistant somebody else's day entirely. Pick the one that sounds like you.
+                Whose day it is changes what has to be protected: a parent&apos;s four hundred small
+                deadlines, an executive&apos;s attention, a caregiver&apos;s second full inbox, a
+                consultant&apos;s billable hours. Pick the one that sounds like you.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -157,9 +165,15 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-ink leading-tight">
                 What Clients Say After 30 Days
               </h2>
+              {/* Same correction as the section above. Three of the eight quotes below are a
+                  parent, someone caring for a parent, and a couple who both work - introduced
+                  until now by a line naming only job titles. "The overhead of being reachable"
+                  went with it: it is an office problem, and the parent's version is a list that
+                  never unloads whether or not anybody is trying to reach her. */}
               <p className="text-lg text-ink mt-4 max-w-3xl mx-auto">
-                Executives, founders, consultants and the people who support them, all getting the same
-                thing back: the hours that went into the overhead of being reachable.
+                Executives and founders, parents and caregivers, and the people who support them,
+                all getting the same thing back: the hours that went into carrying it all, rather
+                than into doing any of it.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
