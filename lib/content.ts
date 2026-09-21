@@ -29,6 +29,16 @@
 // into a personal section. The jobs themselves did not change, because they were always the
 // right jobs - what changed is that the copy stops pretending the day stops at six.
 //
+// AND THE PERSONAL ONE GOES FIRST IN EACH PAIR. Mixing was not enough on its own: every card
+// led with the work example and followed with the personal one - the client thread, then the
+// school newsletter; the board meeting, then the appointment. Read down the six and the product
+// was a work assistant that also does home, which is the opposite of its name. The pairs are the
+// same pairs, in the other order.
+//
+// Watch for an example that is only personal if you already know it is. "A conversation with a
+// consultant" meant the medical kind and was read as the management kind, because it sat beside
+// a client call. An example that needs the reader's charity to land is a work example.
+//
 // WHAT IT STILL MAY NOT SAY. The agent connects mail, a calendar and a document store. It does
 // not phone anybody, hold a bank login or do anything with a card. Personal-life copy is exactly
 // where a product like this starts implying otherwise, so every line below names something that
@@ -42,7 +52,7 @@
 export const CAPABILITIES = [
   {
     title: "An Inbox That Is Already Sorted",
-    body: "The client thread, the school newsletter and the thing that needs an answer by Friday, separated from each other rather than stacked in arrival order, with replies drafted for the ones that only need sending.",
+    body: "The permission slip, the club that needs a yes by Friday and the client thread, separated from each other rather than stacked in arrival order, with replies drafted for the ones that only need sending.",
   },
   {
     // The protected blocks are named, because "the ones that are not meetings" was us
@@ -50,26 +60,29 @@ export const CAPABILITIES = [
     // (personalIntake.ts, "What should it defend on your calendar?"), so the card promises
     // exactly what the questionnaire asks for. The clash line comes from /for-households.
     title: "The Calendar, Handled",
-    body: "Scheduling, rescheduling and the back-and-forth that eats a morning. It defends the blocks you told it to defend - no meetings before ten, Friday afternoons, school pickup on Tuesdays - and flags the clash while there is still time to move something.",
+    body: "Scheduling, rescheduling and the back-and-forth that eats a morning. It defends the blocks you told it to defend - school pickup on Tuesdays, no meetings before ten, Friday afternoons - and flags the clash while there is still time to move something.",
   },
   {
     title: "Briefed Before It Matters",
-    body: "Who you are seeing, what was said last time and what is still outstanding - for the board meeting and for the appointment you have been waiting four months for. It arrives beforehand rather than after you needed it.",
+    body: "Who you are seeing, what was said last time and what is still outstanding - for the appointment you have been waiting four months for, and for the board meeting. It arrives beforehand rather than after you needed it.",
   },
   {
     title: "Open Loops That Stay Visible",
     // "What is quietly overdue" replaced by the concrete version of it from
     // /for-households: the thing decided in passing that both people assumed the other one
     // had written down. That is the failure this actually prevents.
-    body: "What you promised, who owes you a reply, and the thing agreed in passing that nobody wrote down. The proposal and the form that has to be back before term starts, surfaced on a schedule rather than remembered at 2am.",
+    body: "What you promised, who owes you a reply, and the thing agreed in passing that nobody wrote down. The form that has to be back before term starts and the proposal nobody has chased, surfaced on a schedule rather than remembered at 2am.",
   },
   {
     title: "Research on Demand",
-    body: "A company, a supplier, a school, a tutor, a decision you keep postponing because looking into it properly takes an evening you do not have. Summarized with sources you can check.",
+    body: "A school, a tutor, a contractor, a company you are about to deal with - the decision you keep postponing because looking into it properly takes an evening you do not have. Summarized with sources you can check.",
   },
   {
     title: "Notes That Become Actions",
-    body: "What was decided, what you agreed to and what happens next, written up and turned into the follow-ups themselves - whether that was a client call or a conversation with a consultant.",
+    // "A conversation with a consultant" meant a medical one. Sat next to "a client call" it read
+    // as a management consultant, so the one personal example in the card was quietly a work one.
+    // Named properly now, and first.
+    body: "What was decided, what you agreed to and what happens next, written up and turned into the follow-ups themselves - whether that was the appointment with the specialist or a client call.",
   },
 ];
 
