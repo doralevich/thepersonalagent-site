@@ -73,12 +73,20 @@ export const CAPABILITIES = [
   },
 ];
 
+// THE FIRST STEP IS MINUTES, NOT A DAY. "Day 1" implied an onboarding call before anything
+// happened; the questionnaire IS the configuration, and the agent is built from it. The label is
+// the only thing that changed here - what the step describes was always the questionnaire.
+//
+// The label has to fit an 80px circle beside "Week 1" and "Month 1+". "Minute 1" was tried and
+// overflowed it - eight characters of wide uppercase with tracking, running past the border.
+// "15 min" fits on one line and is better anyway: the number is the point, and it is now in the
+// circle rather than only in the heading above.
 export const PROCESS = [
   {
-    phase: "Day 1",
+    phase: "15 min",
     num: "01",
-    title: "We Learn Your Day and Your Lines",
-    body: "How your week actually runs, who matters at work and at home, what has to be protected, and how you sound when you write. Then the boundaries: what it may read, what it may send unattended, and what always waits for you.",
+    title: "You Tell It Your Day and Your Lines",
+    body: "How your week actually runs, who matters at work and at home, what has to be protected, and how you sound when you write. Then the boundaries: what it may read, what it may send unattended, and what always waits for you. That is the questionnaire, and it is the whole of the setup.",
   },
   {
     phase: "Week 1",
@@ -185,7 +193,7 @@ export const FAQS = [
   },
   {
     q: "How long does setup take?",
-    a: "Most people are running within two weeks. We configure it on your day, your people, your voice and your boundaries, then connect the inbox and calendar the work already lives in.",
+    a: "About fifteen minutes. The questionnaire is the configuration - your day, your people, your voice and the boundaries you set - so the agent is built from it and running as soon as you connect the inbox and calendar. It keeps getting better after that: the first week is when the pile stops being a pile, and the drafts need less editing every week after. If you would rather we scoped and built it with you, a consultation does that instead.",
   },
   {
     q: "What does it cost?",
