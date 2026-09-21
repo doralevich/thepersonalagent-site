@@ -72,11 +72,16 @@ export default function Page() {
                 you paste in the context, you take the answer somewhere else and act on it.
                 Close the tab and nothing continues.
               </p>
+              {/* THE ONE CONCRETE EXAMPLE ON THE PAGE THAT EXPLAINS WHAT AN AGENT IS, so it
+                  had better not be a sales example. It was "the lead that came in at 9pm",
+                  which is a thing that happens to about half the people this site is now
+                  written for. The point being made - it acts while you are not looking - is
+                  the same either way, so the example carries both halves. */}
               <p>
                 An agent is the other way around. It has standing instructions, access to
-                the systems where your work actually lives, and a schedule. The lead that
-                came in at 9pm gets a response at 9:02pm whether or not you ever opened
-                anything.
+                the systems where your day actually lives, and a schedule. The email that
+                came in at 9pm is sorted and answered by 9:02, whether it was a client or
+                the school, and whether or not you ever opened anything.
               </p>
               <p>
                 That is the whole distinction, and it is why an agent can be measured in hours returned
@@ -130,8 +135,12 @@ export default function Page() {
                 An inbox and a calendar do not separate work from the rest of a life. The doctor's appointment sits beside the board meeting and the difficult family email beside the invoice. That is not material to hand to a shared consumer product.
               </p>
               <p>
+                {/* "Your world", the same words the FAQ in lib/content.ts uses for this
+                    exact promise. It said "your business" directly under a paragraph about
+                    the doctor's appointment and the difficult family email, which is the
+                    privacy promise contradicting its own reason for existing. */}
                 Your agent runs on its own instance. It is configured for you, it remembers
-                only your business, and it uses read-only, least-privilege access to your
+                only your world, and it uses read-only, least-privilege access to your
                 systems wherever the platform supports it.
               </p>
             </div>
@@ -139,7 +148,7 @@ export default function Page() {
         </section>
 
         <ClosingCta
-          heading="See What One Configured Around Your Business Looks Like"
+          heading="See What One Configured Around Your Day Looks Like"
           body="Build your agent online in about fifteen minutes, or book a consultation and we will walk through exactly what it would do for your day."
         />
       </main>
