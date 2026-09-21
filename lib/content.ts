@@ -45,8 +45,12 @@ export const CAPABILITIES = [
     body: "The client thread, the school newsletter and the thing that needs an answer by Friday, separated from each other rather than stacked in arrival order, with replies drafted for the ones that only need sending.",
   },
   {
+    // The protected blocks are named, because "the ones that are not meetings" was us
+    // explaining the idea rather than showing it. These three are the intake's own examples
+    // (personalIntake.ts, "What should it defend on your calendar?"), so the card promises
+    // exactly what the questionnaire asks for. The clash line comes from /for-households.
     title: "The Calendar, Handled",
-    body: "Scheduling, rescheduling and the back-and-forth that eats a morning. It protects the blocks you told it to protect, and the ones that are not meetings are usually the ones that needed protecting.",
+    body: "Scheduling, rescheduling and the back-and-forth that eats a morning. It defends the blocks you told it to defend - no meetings before ten, Friday afternoons, school pickup on Tuesdays - and flags the clash while there is still time to move something.",
   },
   {
     title: "Briefed Before It Matters",
@@ -54,11 +58,14 @@ export const CAPABILITIES = [
   },
   {
     title: "Open Loops That Stay Visible",
-    body: "What you promised, who owes you a reply, and what is quietly overdue. The proposal and the form that has to be back before term starts, surfaced on a schedule rather than remembered at 2am.",
+    // "What is quietly overdue" replaced by the concrete version of it from
+    // /for-households: the thing decided in passing that both people assumed the other one
+    // had written down. That is the failure this actually prevents.
+    body: "What you promised, who owes you a reply, and the thing agreed in passing that nobody wrote down. The proposal and the form that has to be back before term starts, surfaced on a schedule rather than remembered at 2am.",
   },
   {
     title: "Research on Demand",
-    body: "A company, a supplier, a school, a decision you keep postponing because looking into it properly takes an evening you do not have. Summarized with sources you can check.",
+    body: "A company, a supplier, a school, a tutor, a decision you keep postponing because looking into it properly takes an evening you do not have. Summarized with sources you can check.",
   },
   {
     title: "Notes That Become Actions",

@@ -28,11 +28,20 @@ export default function Home() {
       />
       <Nav />
       <main>
+        {/* WRITTEN AT THE READER, not about the product.
+            The punch line was "The Personal Agent. More Than AI. Your Personal Operating
+            System." - three claims about the software and nothing about the person reading
+            it, with the one phrase on the page nobody has ever said out loud. The sub then
+            made the product the subject of every clause: the agent triages, the agent runs,
+            the agent briefs. True, and it reads like a datasheet.
+            Both now start from the reader's side of the screen and name things a visitor
+            can picture. The title stays: somebody who has been let down by three productivity
+            apps is exactly who this is for, and it says so. */}
         <Hero
           badge="Apollo[Claw] Personal Edition"
           title="A real assistant. Not another productivity app."
-          punch="The Personal Agent. More Than AI. Your Personal Operating System."
-          sub="The Personal Agent triages your inbox and drafts the replies, runs the calendar, briefs you before it matters and keeps track of what you promised - at work and at home, because they arrive in the same inbox. It learns how you sound, what has to be protected, and what must never go out without you."
+          punch="You keep the decisions. Everything wrapped around them stops being yours."
+          sub="You open an inbox that is already sorted, with the replies drafted. Your calendar defends the blocks you told it to defend, school pickup included. What you promised comes back to you before it is late - at work and at home, because they arrive in the same inbox. It learns how you sound, what has to be protected, and what must never go out without you."
           mascot="/images/the-personal-agent-mascot-transparent.png"
           mascotAlt="The Personal Agent mascot"
         />
@@ -45,16 +54,25 @@ export default function Home() {
               The Work Only You Can Do Is the Small Part of the Day.
             </h2>
             <div className="text-lg text-ink leading-relaxed space-y-4 max-w-3xl mx-auto">
+              {/* The strongest thing either personal audience page says is the arithmetic on
+                  /for-parents: each one takes four minutes, none can be skipped, and the cost
+                  was never the four minutes. This paragraph was the abstract version of it -
+                  "several hundred interruptions that anybody could handle" - which is an
+                  executive's description of a day and nobody else's. It now names things,
+                  drawn from both halves: a permission slip, and the Tuesday from
+                  /for-households that was agreed in a corridor and written down by nobody. */}
               <p>
-                A handful of decisions each day genuinely need you. They arrive wrapped in several
-                hundred interruptions that anybody could handle, all with the same
-                urgency, and sorting them is itself the work that stops you doing
-                either.
+                A handful of things each day genuinely need you. The rest is forty small ones
+                that take four minutes each, cannot be skipped, and arrive with exactly the
+                same urgency: the permission slip, the reschedule, the thing agreed in a
+                corridor and written down by nobody.
               </p>
               <p>
-                The Personal Agent takes the wrapping: the triage, the scheduling, the prep, the notes
-                and the chasing. It does not make your decisions. It gives you back the
-                hours in which you would make them.
+                The cost was never the four minutes. It is that the list never fully unloads,
+                so no hour of your week is really free of it. The Personal Agent takes the
+                wrapping: the triage, the scheduling, the prep, the notes and the chasing. It
+                does not make your decisions. It gives you back the hours in which you would
+                make them.
               </p>
             </div>
           </div>
@@ -65,8 +83,12 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12">
               <Label>What It Does</Label>
+              {/* The same heading the audience pages put over the same six jobs, so somebody
+                  arriving from /for-parents recognises where they are. "A Dedicated AI Agent
+                  for Your Day" was a label for the product rather than an answer to the
+                  question the visitor is actually asking, which is what it will do for them. */}
               <h2 className="text-3xl md:text-4xl font-bold text-ink leading-tight">
-                A Dedicated AI Agent for Your Day
+                What Your Agent Handles
               </h2>
               <p className="text-lg text-ink mt-4 max-w-3xl mx-auto">
                 Reading only what you give it. Writing in your voice. Sending exactly as far as you
