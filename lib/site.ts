@@ -32,7 +32,7 @@ export const OG_IMAGE_ALT =
   "The Personal Agent: your inbox, your calendar, your day. Work and home.";
 
 export const PARENT_SITE = "https://apolloclaw.ai";
-export const CONTACT_EMAIL = "david@apolloclaw.ai";
+export const CONTACT_EMAIL = "hello@apolloclaw.ai";
 export const CONTACT_PHONE = "(917) 363-5487";
 
 export const NAV_LINKS = [
@@ -41,6 +41,7 @@ export const NAV_LINKS = [
   { label: "Results", href: "/#results" },
   { label: "FAQ", href: "/faq" },
   { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 /**
